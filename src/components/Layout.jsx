@@ -124,6 +124,29 @@ function Footer() {
 }
 
 export function Layout({ children }) {
+  useEffect(() => {
+    const handleInternalNavigation = (event) => {
+      const anchor = event.target.closest('a')
+      if (!anchor || anchor.target || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+
+      let url
+      try {
+        url = new URL(anchor.href, window.location.origin)
+      } catch {
+        return
+      }
+
+      if (url.origin !== window.location.origin) return
+      if (url.pathname === window.location.pathname && url.search === window.location.search) return
+
+      event.preventDefault()
+      window.location.assign(url.pathname + url.search + url.hash)
+    }
+
+    document.addEventListener('click', handleInternalNavigation, true)
+    return () => document.removeEventListener('click', handleInternalNavigation, true)
+  }, [])
+
   return (
     <>
       <ScrollToTop />
