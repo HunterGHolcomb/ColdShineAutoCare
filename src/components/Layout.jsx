@@ -31,7 +31,7 @@ function useReveal() {
 export function Reveal({ children, className = '' }) {
   const ref = useReveal()
   return (
-    <div ref={ref} className={`reveal ${className}`.trim()}>
+    <div ref={ref} className={`reveal is-visible ${className}`.trim()}>
       {children}
     </div>
   )
