@@ -3,85 +3,308 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="ColdShine Auto Care — premium mobile detailing serving McKinney and the DFW area.">
-<meta name="theme-color" content="#07090c">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="ColdShine Auto Care | Mobile detailing in McKinney, TX and DFW.">
 <title>ColdShine Auto Care | Mobile Detailing DFW</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07090c;--panel:#0d1115;--panel2:#11171c;--text:#f3f6f8;--muted:#9da7af;--line:rgba(255,255,255,.13);--ice:#bceeff;--ice2:#75d9ff;--display:"Barlow Condensed",sans-serif;--body:"DM Sans",sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);overflow-x:hidden}a{color:inherit;text-decoration:none}img{display:block;width:100%}button{font:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
-.header{position:fixed;z-index:50;top:0;left:0;right:0;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(20px,calc((100vw - 1180px)/2));border-bottom:1px solid rgba(255,255,255,.09);background:linear-gradient(#07090ce8,#07090c8a);backdrop-filter:blur(14px)}
-.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;letter-spacing:.045em;font-size:24px}.logo-mark{position:relative;width:32px;height:27px}.logo-mark:before,.logo-mark:after{content:"";position:absolute;top:1px;width:8px;height:25px;background:var(--ice);transform:skew(-22deg)}.logo-mark:before{left:5px}.logo-mark:after{left:18px}.nav{display:flex;align-items:center;gap:30px;font-size:13px;font-weight:600}.nav a:not(.quote):hover{color:var(--ice)}.quote{padding:11px 15px;border:1px solid rgba(255,255,255,.25);transition:.2s}.quote:hover{background:var(--ice);border-color:var(--ice);color:#071016}.menu{display:none;border:0;background:none;color:white;width:42px;height:42px;font-size:24px}
-.hero{min-height:820px;height:100svh;max-height:1000px;position:relative;display:flex;align-items:flex-end;overflow:hidden}.hero-bg{position:absolute;inset:0}.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 48%;filter:saturate(.65) brightness(.58) contrast(1.07);transform:scale(1.015)}.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,6,8,.95) 0%,rgba(4,6,8,.72) 41%,rgba(4,6,8,.14) 76%),linear-gradient(0deg,rgba(4,6,8,.92) 0%,transparent 50%)}.hero-inner{position:relative;z-index:2;padding-bottom:125px;width:min(860px,78vw)}.eyebrow,.section-label{margin:0 0 17px;color:var(--ice);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}.hero h1,.section-title,.standard h2,.reviews h2,.cta h2{font-family:var(--display);font-weight:700;letter-spacing:-.035em;line-height:.84;margin:0;text-transform:uppercase}.hero h1{font-size:clamp(86px,11vw,155px)}.hero h1 span,.section-title span,.standard h2 span,.cta h2 span{color:var(--ice)}.hero-copy{max-width:560px;color:#c8d0d6;font-size:18px;line-height:1.7;margin:30px 0 34px}.actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap}.primary{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;background:var(--ice);color:#071016;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.2s}.primary:hover{transform:translateY(-2px);background:white}.secondary{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding-bottom:5px;border-bottom:1px solid rgba(255,255,255,.34)}.stats{position:absolute;z-index:3;right:0;bottom:0;display:grid;grid-template-columns:repeat(3,150px);background:rgba(7,9,12,.84);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-left:1px solid var(--line)}.stats div{padding:22px;border-right:1px solid var(--line)}.stats strong{display:block;font-family:var(--display);font-size:30px;line-height:1}.stats small{display:block;color:var(--muted);font-size:8px;letter-spacing:.15em;margin-top:7px}
-.marquee{overflow:hidden;border-block:1px solid var(--line);background:#0a0d10}.marquee-track{width:max-content;display:flex;gap:28px;align-items:center;padding:15px 0;animation:move 28s linear infinite;font-family:var(--display);font-size:15px;font-weight:600;letter-spacing:.08em}.marquee b{font-size:8px;color:var(--ice)}@keyframes move{to{transform:translateX(-50%)}}
-.section{padding:125px 0}.intro{display:grid;grid-template-columns:1fr .8fr;gap:80px;align-items:end;margin-bottom:62px}.section-label{grid-column:1/-1;margin-bottom:-20px}.section-title{font-size:clamp(60px,7.7vw,108px)}.intro p{margin:0 0 7px;color:var(--muted);line-height:1.8;max-width:470px}.services{border-top:1px solid var(--line)}.service{display:grid;grid-template-columns:60px 1.15fr 1fr auto;gap:26px;align-items:center;min-height:128px;border-bottom:1px solid var(--line);transition:.2s}.service:hover{background:rgba(188,238,255,.035);padding-inline:12px}.num{font-family:var(--display);font-size:13px;color:#69737c;letter-spacing:.1em}.service h3{font:600 clamp(30px,3.2vw,43px)/1 var(--display);letter-spacing:-.01em;text-transform:uppercase;margin:0}.service p{color:var(--muted);font-size:14px;line-height:1.65;margin:0;max-width:430px}.service .arr{font-size:22px;color:var(--ice)}
-.standard{min-height:720px;display:grid;grid-template-columns:1.12fr .88fr;border-block:1px solid var(--line)}.standard-photo{position:relative;overflow:hidden}.standard-photo img{height:100%;object-fit:cover;filter:saturate(.7) brightness(.72)}.standard-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 65%,rgba(7,9,12,.6))}.standard-copy{display:flex;flex-direction:column;justify-content:center;padding:80px clamp(35px,6vw,95px);background:#0b0f12}.standard h2{font-size:clamp(65px,7vw,105px)}.standard-copy>p:not(.section-label){color:var(--muted);line-height:1.8;margin:32px 0 40px}.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line)}.mini-stats div{padding:18px 12px 18px 0}.mini-stats div+div{border-left:1px solid var(--line);padding-left:18px}.mini-stats strong{display:block;font:700 31px/1 var(--display)}.mini-stats small{display:block;color:var(--muted);font-size:8px;letter-spacing:.11em;margin-top:6px}.standard .primary{margin-top:32px;align-self:flex-start}
-.reviews{padding:125px 0;background:#090c0f}.reviews-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:52px}.reviews h2{font-size:clamp(65px,7.7vw,108px)}.score{text-align:right}.score strong{display:block;font:700 72px/.9 var(--display)}.stars{color:var(--ice2);letter-spacing:.12em;font-size:13px}.score .stars{display:block;margin-top:13px}.score small{display:block;color:var(--muted);font-size:10px;margin-top:7px}.review-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;gap:1px;background:var(--line);border:1px solid var(--line)}.review{min-height:340px;background:#11161a;padding:32px;display:flex;flex-direction:column}.review:first-child{background:#151c21}.review .q{color:var(--ice);font:60px/.8 Georgia,serif}.review blockquote{margin:30px 0 auto;font:600 clamp(25px,2.3vw,34px)/1.18 var(--display)}.review-foot{display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--line);padding-top:20px;margin-top:28px;color:var(--muted);font-size:9px;letter-spacing:.11em;text-transform:uppercase}.review-foot .stars{font-size:9px}
-.cta{padding:150px 20px;text-align:center;background:radial-gradient(circle at center,rgba(117,217,255,.09),transparent 32%),#07090c}.cta h2{font-size:clamp(80px,10vw,150px)}.cta p{color:var(--muted);margin:28px auto 37px;max-width:520px;line-height:1.7}.contact-row{display:flex;justify-content:center;gap:28px;align-items:center;flex-wrap:wrap}.email{font-size:13px;color:#cfd6db;border-bottom:1px solid var(--line);padding-bottom:4px}
-.footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:11px}.footer .wrap{display:grid;grid-template-columns:1.4fr 1fr auto auto;gap:24px;align-items:center}.footer .logo{color:white;font-size:20px}.footer a:not(.logo){color:#e3e8eb}
-.reveal{opacity:0;transform:translateY(18px);animation:reveal .8s cubic-bezier(.2,.8,.2,1) forwards}.reveal:nth-child(2){animation-delay:.08s}.reveal:nth-child(3){animation-delay:.14s}.reveal:nth-child(4){animation-delay:.2s}@keyframes reveal{to{opacity:1;transform:none}}
-@media(max-width:950px){.hero-inner{width:92vw;padding-bottom:165px}.stats{left:0;right:auto;grid-template-columns:repeat(3,130px)}.intro{grid-template-columns:1fr;gap:28px}.section-label{margin-bottom:0}.service{grid-template-columns:44px 1fr auto;padding:24px 0}.service p{grid-column:2}.service .arr{grid-column:3;grid-row:1/span 2}.standard{grid-template-columns:1fr}.standard-photo{min-height:520px}.review-grid{grid-template-columns:1fr}.review{min-height:280px}.footer .wrap{grid-template-columns:1fr 1fr}}
-@media(max-width:720px){.header{height:68px;padding:0 18px}.menu{display:block}.nav{position:fixed;top:68px;left:0;right:0;padding:8px 18px 18px;display:grid;gap:0;background:#07090cf8;border-bottom:1px solid var(--line);transform:translateY(-130%);opacity:0;pointer-events:none;transition:.25s}.nav.open{transform:none;opacity:1;pointer-events:auto}.nav a{padding:14px 0;border-bottom:1px solid var(--line)}.quote{border:0}.wrap{width:min(100% - 36px,1180px)}.hero{min-height:780px}.hero-bg img{object-position:62% center}.hero-bg:after{background:linear-gradient(0deg,rgba(4,6,8,.96),rgba(4,6,8,.6) 58%,rgba(4,6,8,.18))}.hero-inner{width:100%;padding-bottom:172px}.hero h1{font-size:clamp(74px,22vw,110px)}.hero-copy{font-size:15px}.stats{width:100%;grid-template-columns:repeat(3,1fr)}.stats div{padding:16px 12px}.stats strong{font-size:25px}.stats small{font-size:7px}.section{padding:82px 0}.section-title,.standard h2,.reviews h2{font-size:clamp(57px,18vw,82px)}.service{grid-template-columns:32px 1fr 22px;gap:13px}.service h3{font-size:30px}.service p{font-size:13px}.standard-photo{min-height:420px}.standard-copy{padding:75px 20px}.mini-stats strong{font-size:24px}.reviews{padding:85px 0}.reviews-head{display:block}.score{text-align:left;margin-top:40px}.review{padding:26px 22px}.cta{padding:115px 18px}.cta h2{font-size:clamp(72px,22vw,108px)}.footer .wrap{grid-template-columns:1fr;gap:13px}.primary{width:100%}.actions .secondary{margin:auto}}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+:root{
+  --black:#090909;
+  --black2:#111111;
+  --cream:#f2eee5;
+  --paper:#e8e3d8;
+  --lime:#dfff3f;
+  --muted:#aaa79f;
+  --line:rgba(242,238,229,.18);
+  --line-dark:rgba(9,9,9,.18);
+  --display:"Oswald",sans-serif;
+  --body:"Inter",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--cream);font-family:var(--body);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%}
+button{font:inherit}
+.wrap{width:min(1280px,calc(100% - 48px));margin:0 auto}
+.header{
+  position:fixed;z-index:60;top:0;left:0;right:0;height:74px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 max(24px,calc((100vw - 1280px)/2));
+  border-bottom:1px solid rgba(255,255,255,.16);
+  background:rgba(9,9,9,.84);backdrop-filter:blur(12px)
+}
+.wordmark{display:flex;align-items:center;gap:11px;font:700 23px/1 var(--display);letter-spacing:.02em}
+.mark{width:30px;height:28px;position:relative}
+.mark:before,.mark:after{content:"";position:absolute;top:1px;width:8px;height:26px;background:var(--lime);transform:skew(-18deg)}
+.mark:before{left:4px}.mark:after{left:17px}
+.nav{display:flex;align-items:center;gap:30px;text-transform:uppercase;font-size:11px;font-weight:700;letter-spacing:.09em}
+.nav>a:not(.quote-link){opacity:.82}
+.nav>a:not(.quote-link):hover{opacity:1;color:var(--lime)}
+.quote-link{background:var(--lime);color:#090909;padding:13px 17px}
+.menu{display:none;background:none;border:0;color:var(--cream);font-size:26px}
+
+.hero{position:relative;height:100svh;min-height:760px;max-height:980px;display:flex;align-items:flex-end;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(.05) saturate(.7) brightness(.56) contrast(1.08);transform:scale(1.012)}
+.hero-media:after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(9,9,9,.93) 0%,rgba(9,9,9,.71) 39%,rgba(9,9,9,.18) 70%),
+  linear-gradient(0deg,rgba(9,9,9,.95) 0%,rgba(9,9,9,0) 42%)}
+.hero-content{position:relative;z-index:2;padding-bottom:122px;width:min(900px,76vw)}
+.kicker,.label{margin:0 0 15px;color:var(--lime);font-size:10px;line-height:1.2;font-weight:700;letter-spacing:.19em;text-transform:uppercase}
+.hero h1,.section-title,.standard h2,.reviews h2,.cta h2{
+  margin:0;font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:-.035em;line-height:.88
+}
+.hero h1{font-size:clamp(82px,11.3vw,166px)}
+.hero h1 span{color:var(--lime)}
+.hero-lead{max-width:570px;margin:28px 0 32px;color:#d3d0c8;font-size:17px;line-height:1.7}
+.hero-actions{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.button{
+  display:inline-flex;align-items:center;justify-content:center;min-height:51px;padding:0 20px;
+  background:var(--lime);color:#090909;text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.09em
+}
+.button:hover{background:#efff9a}
+.text-link{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:4px}
+.hero-scroll{position:absolute;z-index:3;left:max(24px,calc((100vw - 1280px)/2));bottom:27px;color:#c5c2ba;font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+.hero-stats{position:absolute;z-index:3;right:0;bottom:0;display:grid;grid-template-columns:repeat(3,148px);background:rgba(9,9,9,.86);border-top:1px solid var(--line);border-left:1px solid var(--line);backdrop-filter:blur(8px)}
+.hero-stats div{padding:20px 22px;border-right:1px solid var(--line)}
+.hero-stats strong{display:block;font:600 31px/1 var(--display);text-transform:uppercase}
+.hero-stats small{display:block;color:#a9a69e;font-size:7.5px;letter-spacing:.15em;margin-top:7px;text-transform:uppercase}
+
+.marquee{overflow:hidden;background:var(--lime);color:#090909}
+.track{display:flex;align-items:center;gap:26px;width:max-content;padding:13px 0;animation:marquee 25s linear infinite;font:600 14px/1 var(--display);letter-spacing:.06em;text-transform:uppercase}
+.track b{font-size:10px}@keyframes marquee{to{transform:translateX(-50%)}}
+
+.section{padding:118px 0}
+.services-section{background:var(--cream);color:var(--black)}
+.services-head{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:end;margin-bottom:48px}
+.services-head .label{color:#707000}
+.services-head p:last-child{margin:0 0 7px;max-width:490px;color:#595850;font-size:15px;line-height:1.75}
+.section-title{font-size:clamp(60px,7.5vw,110px)}
+.section-title span{color:#7a8700}
+.service-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line-dark);border-left:1px solid var(--line-dark)}
+.service-card{
+  min-height:300px;padding:34px;display:flex;flex-direction:column;
+  border-right:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);background:transparent;
+  transition:background .2s,color .2s
+}
+.service-card:hover{background:var(--black);color:var(--cream)}
+.service-card:hover .service-no,.service-card:hover p{color:#bbb7ad}
+.service-card:hover .service-cta{color:var(--lime)}
+.service-no{font:600 14px/1 var(--display);letter-spacing:.08em;color:#747168}
+.service-card h3{margin:36px 0 12px;font:600 clamp(33px,3.2vw,48px)/1 var(--display);text-transform:uppercase;letter-spacing:-.025em}
+.service-card p{margin:0;color:#5f5c55;max-width:500px;line-height:1.65;font-size:13px}
+.service-cta{margin-top:auto;padding-top:28px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+
+.standard{display:grid;grid-template-columns:1.08fr .92fr;min-height:760px;border-block:1px solid var(--line)}
+.standard-photo{position:relative;overflow:hidden}
+.standard-photo img{height:100%;object-fit:cover;filter:saturate(.55) brightness(.67) contrast(1.06)}
+.standard-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(9,9,9,.42))}
+.standard-copy{display:flex;flex-direction:column;justify-content:center;padding:80px clamp(42px,6vw,100px);background:var(--black2)}
+.standard h2{font-size:clamp(64px,6.6vw,100px)}
+.standard h2 span{color:var(--lime)}
+.standard-copy>p:not(.label){margin:28px 0 42px;color:#b8b4ab;line-height:1.75;font-size:15px}
+.standard-stats{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line)}
+.standard-stats div{padding:18px 12px 18px 0}
+.standard-stats div+div{border-left:1px solid var(--line);padding-left:18px}
+.standard-stats strong{display:block;font:600 30px/1 var(--display)}
+.standard-stats small{display:block;color:#969289;font-size:7.5px;letter-spacing:.12em;margin-top:7px;text-transform:uppercase}
+.standard .button{align-self:flex-start;margin-top:32px}
+
+.reviews{background:var(--cream);color:var(--black);padding:118px 0}
+.reviews-head{display:flex;justify-content:space-between;gap:40px;align-items:flex-end;margin-bottom:48px}
+.reviews .label{color:#707000}
+.reviews h2{font-size:clamp(62px,7.5vw,108px)}
+.score{text-align:right}
+.score strong{display:block;font:600 74px/.88 var(--display)}
+.score .stars{display:block;margin-top:13px;color:#6e7d00;font-size:13px;letter-spacing:.12em}
+.score small{display:block;color:#706d64;font-size:8px;letter-spacing:.12em;margin-top:6px;text-transform:uppercase}
+.review-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;border-top:1px solid var(--line-dark);border-left:1px solid var(--line-dark)}
+.review-card{min-height:330px;padding:30px;display:flex;flex-direction:column;border-right:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark)}
+.review-card:first-child{background:#ded8cc}
+.review-stars{color:#697700;letter-spacing:.11em;font-size:11px}
+.review-card blockquote{margin:36px 0 auto;font:500 clamp(24px,2.2vw,34px)/1.18 var(--display)}
+.review-foot{border-top:1px solid var(--line-dark);padding-top:18px;margin-top:28px;color:#68655e;font-size:8px;letter-spacing:.12em;text-transform:uppercase}
+
+.cta{position:relative;min-height:680px;display:flex;align-items:center;text-align:center;overflow:hidden}
+.cta-bg{position:absolute;inset:0}
+.cta-bg img{height:100%;object-fit:cover;filter:grayscale(.1) saturate(.55) brightness(.38)}
+.cta-bg:after{content:"";position:absolute;inset:0;background:rgba(9,9,9,.45)}
+.cta-inner{position:relative;z-index:2;width:min(1100px,calc(100% - 40px));margin:auto}
+.cta h2{font-size:clamp(78px,10.4vw,156px)}
+.cta h2 span{color:var(--lime)}
+.cta p:not(.label){margin:28px auto 35px;color:#c1bdb4;max-width:500px;line-height:1.65}
+.cta-actions{display:flex;justify-content:center;gap:25px;align-items:center;flex-wrap:wrap}
+.email{font-size:11px;letter-spacing:.04em;border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:3px}
+
+.footer{border-top:1px solid var(--line);padding:28px 0;background:#080808;color:#aaa69e;font-size:10px}
+.footer .wrap{display:grid;grid-template-columns:1.3fr 1fr auto auto;align-items:center;gap:25px}
+.footer .wordmark{color:var(--cream);font-size:19px}
+.footer a:not(.wordmark){color:#e2ded5}
+
+@media(max-width:960px){
+  .hero-content{width:92vw;padding-bottom:165px}
+  .hero-stats{left:0;right:auto;grid-template-columns:repeat(3,128px)}
+  .services-head{grid-template-columns:1fr;gap:25px}
+  .service-grid{grid-template-columns:1fr}
+  .standard{grid-template-columns:1fr}.standard-photo{min-height:520px}
+  .review-grid{grid-template-columns:1fr}
+  .review-card{min-height:260px}
+  .footer .wrap{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .header{height:68px;padding:0 18px}
+  .menu{display:block}
+  .nav{position:fixed;top:68px;left:0;right:0;display:grid;gap:0;padding:8px 18px 18px;background:#090909f8;border-bottom:1px solid var(--line);transform:translateY(-130%);opacity:0;pointer-events:none;transition:.24s}
+  .nav.open{transform:none;opacity:1;pointer-events:auto}
+  .nav a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .quote-link{background:none;color:var(--lime)}
+  .wrap{width:min(100% - 36px,1280px)}
+  .hero{min-height:780px}
+  .hero-media img{object-position:62% center}
+  .hero-media:after{background:linear-gradient(0deg,rgba(9,9,9,.97) 0%,rgba(9,9,9,.63) 58%,rgba(9,9,9,.16))}
+  .hero-content{width:100%;padding-bottom:178px}
+  .hero h1{font-size:clamp(72px,22vw,108px)}
+  .hero-lead{font-size:15px}
+  .hero-stats{width:100%;grid-template-columns:repeat(3,1fr)}
+  .hero-stats div{padding:15px 12px}.hero-stats strong{font-size:24px}.hero-stats small{font-size:6.5px}
+  .hero-scroll{display:none}
+  .section{padding:78px 0}
+  .section-title,.standard h2,.reviews h2{font-size:clamp(55px,17vw,82px)}
+  .service-card{min-height:265px;padding:26px 22px}
+  .standard-photo{min-height:420px}
+  .standard-copy{padding:72px 20px}
+  .reviews{padding:82px 0}
+  .reviews-head{display:block}.score{text-align:left;margin-top:36px}
+  .review-card{padding:26px 22px}
+  .cta{min-height:650px}
+  .cta h2{font-size:clamp(72px,22vw,106px)}
+  .footer .wrap{grid-template-columns:1fr;gap:12px}
+  .button{width:100%}.hero-actions .text-link{margin:auto}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <header class="header">
-<a class="logo" href="#top" aria-label="ColdShine home"><span class="logo-mark"></span><span>COLDSHINE</span></a>
-<button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
-<nav class="nav">
-<a href="#services">Services</a><a href="#work">Our Work</a><a href="#reviews">Reviews</a><a class="quote" href="tel:+12149453694">Get a Quote ↗</a>
-</nav>
+  <a class="wordmark" href="#top"><span class="mark"></span><span>COLDSHINE</span></a>
+  <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="#services">Services</a>
+    <a href="#standard">Our Work</a>
+    <a href="#reviews">Reviews</a>
+    <a class="quote-link" href="tel:+12149453694">Get a Quote ↗</a>
+  </nav>
 </header>
+
 <main id="top">
 <section class="hero">
-<div class="hero-bg"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=2200&q=90" alt=""></div>
+  <div class="hero-media"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=2200&q=92" alt=""></div>
+  <div class="wrap">
+    <div class="hero-content">
+      <p class="kicker">Mobile Detailing · McKinney, TX · DFW</p>
+      <h1>THE DETAIL<br><span>DIFFERENCE.</span></h1>
+      <p class="hero-lead">Premium mobile auto detailing that brings the shop-quality finish directly to your driveway.</p>
+      <div class="hero-actions">
+        <a class="button" href="tel:+12149453694">Book Your Detail ↗</a>
+        <a class="text-link" href="#services">Explore Services ↓</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll ↓</div>
+  <div class="hero-stats">
+    <div><strong>5.0 ★★★★★</strong><small>Google Reviews</small></div>
+    <div><strong>16</strong><small>Google Reviews</small></div>
+    <div><strong>DFW</strong><small>Proudly Serving</small></div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="track">
+    <span>Interior Detailing</span><b>✦</b><span>Exterior Detailing</span><b>✦</b><span>Paint Correction</span><b>✦</b><span>Ceramic Coating</span><b>✦</b><span>Headlight Restoration</span><b>✦</b>
+    <span>Interior Detailing</span><b>✦</b><span>Exterior Detailing</span><b>✦</b><span>Paint Correction</span><b>✦</b><span>Ceramic Coating</span><b>✦</b><span>Headlight Restoration</span><b>✦</b>
+  </div>
+</div>
+
+<section class="section services-section" id="services">
 <div class="wrap">
-<div class="hero-inner">
-<p class="eyebrow reveal">Mobile Detailing · McKinney, TX · DFW</p>
-<h1 class="reveal">THE DETAIL<br><span>DIFFERENCE.</span></h1>
-<p class="hero-copy reveal">Premium mobile auto detailing that brings the shop-quality finish directly to your driveway.</p>
-<div class="actions reveal"><a class="primary" href="tel:+12149453694">Book Your Detail ↗</a><a class="secondary" href="#services">Explore Services ↓</a></div>
-</div>
-</div>
-<div class="stats"><div><strong>5.0 ★</strong><small>GOOGLE RATING</small></div><div><strong>16</strong><small>GOOGLE REVIEWS</small></div><div><strong>DFW</strong><small>PROUDLY SERVING</small></div></div>
-</section>
-<div class="marquee"><div class="marquee-track"><span>INTERIOR DETAILING</span><b>✦</b><span>EXTERIOR DETAILING</span><b>✦</b><span>PAINT CORRECTION</span><b>✦</b><span>CERAMIC COATING</span><b>✦</b><span>HEADLIGHT RESTORATION</span><b>✦</b><span>INTERIOR DETAILING</span><b>✦</b><span>EXTERIOR DETAILING</span><b>✦</b><span>PAINT CORRECTION</span><b>✦</b><span>CERAMIC COATING</span><b>✦</b><span>HEADLIGHT RESTORATION</span><b>✦</b></div></div>
+  <div class="services-head">
+    <div>
+      <p class="label">01 What We Do</p>
+      <h2 class="section-title">BUILT TO MAKE<br><span>YOUR CAR POP.</span></h2>
+    </div>
+    <p>Professional care. Mobile convenience. A finish you’ll notice the second you see your car.</p>
+  </div>
 
-<section class="section" id="services"><div class="wrap">
-<div class="intro"><p class="section-label">01 · What We Do</p><h2 class="section-title">BUILT TO MAKE<br><span>YOUR CAR POP.</span></h2><p>Professional care. Mobile convenience. A finish you’ll notice the second you see your car.</p></div>
-<div class="services">
-<article class="service"><span class="num">01</span><h3>Full Detail</h3><p>Deep interior reset + exterior wash for a complete transformation.</p><a class="arr" href="tel:+12149453694">↗</a></article>
-<article class="service"><span class="num">02</span><h3>Paint Correction</h3><p>Restore clarity, gloss and depth by removing swirls and imperfections.</p><a class="arr" href="tel:+12149453694">↗</a></article>
-<article class="service"><span class="num">03</span><h3>Ceramic Coating</h3><p>Long-lasting protection with a slick, glossy finish that turns heads.</p><a class="arr" href="tel:+12149453694">↗</a></article>
-<article class="service"><span class="num">04</span><h3>Headlight Restoration</h3><p>Bring cloudy, yellow headlights back to a crystal-clear finish.</p><a class="arr" href="tel:+12149453694">↗</a></article>
-<article class="service"><span class="num">05</span><h3>Maintenance Detail</h3><p>Keep your vehicle looking freshly detailed between major services.</p><a class="arr" href="tel:+12149453694">↗</a></article>
-<article class="service"><span class="num">06</span><h3>Engine Detailing</h3><p>A clean, careful finish for the part of your car most people forget.</p><a class="arr" href="tel:+12149453694">↗</a></article>
+  <div class="service-grid">
+    <article class="service-card"><span class="service-no">01</span><h3>Full Detail</h3><p>Deep interior reset + exterior wash for a complete transformation.</p><a class="service-cta" href="tel:+12149453694">Get a Quote ↗</a></article>
+    <article class="service-card"><span class="service-no">02</span><h3>Paint Correction</h3><p>Restore clarity, gloss and depth by removing swirls and imperfections.</p><a class="service-cta" href="tel:+12149453694">Get a Quote ↗</a></article>
+    <article class="service-card"><span class="service-no">03</span><h3>Ceramic Coating</h3><p>Long-lasting protection with a slick, glossy finish that turns heads.</p><a class="service-cta" href="tel:+12149453694">Get a Quote ↗</a></article>
+    <article class="service-card"><span class="service-no">04</span><h3>Headlight Restoration</h3><p>Bring cloudy, yellow headlights back to a crystal-clear finish.</p><a class="service-cta" href="tel:+12149453694">Get a Quote ↗</a></article>
+    <article class="service-card"><span class="service-no">05</span><h3>Maintenance Detail</h3><p>Keep your vehicle looking freshly detailed between major services.</p><a class="service-cta" href="tel:+12149453694">Get a Quote ↗</a></article>
+    <article class="service-card"><span class="service-no">06</span><h3>Engine Detailing</h3><p>A clean, careful finish for the part of your car most people forget.</p><a class="service-cta" href="tel:+12149453694">Get a Quote ↗</a></article>
+  </div>
 </div>
-</div></section>
-
-<section class="standard" id="work">
-<div class="standard-photo"><img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1800&q=88" alt="Detailed black car with glossy paint" loading="lazy"></div>
-<div class="standard-copy"><p class="section-label">The ColdShine Standard</p><h2>IF IT'S NOT<br><span>GLOSSY, WE'RE</span><br>NOT DONE.</h2><p>From daily drivers to weekend cars, every vehicle gets the same obsessive attention to detail. We come to you across the DFW area.</p>
-<div class="mini-stats"><div><strong>5.0</strong><small>GOOGLE RATING</small></div><div><strong>16+</strong><small>REVIEWS</small></div><div><strong>DFW</strong><small>WE COME TO YOU</small></div></div>
-<a class="primary" href="tel:+12149453694">Start Your Detail ↗</a></div>
 </section>
 
-<section class="reviews" id="reviews"><div class="wrap">
-<div class="reviews-head"><div><p class="section-label">02 · Customer Love</p><h2>DON'T TAKE<br>OUR WORD FOR IT.</h2></div><div class="score"><strong>5.0</strong><span class="stars">★★★★★</span><small>GOOGLE RATING</small></div></div>
-<div class="review-grid">
-<article class="review"><span class="q">“</span><blockquote>Made my headlights restored like they’re brand new! Highly recommend to anyone and everyone!</blockquote><div class="review-foot"><span>Verified Google Review</span><span class="stars">★★★★★</span></div></article>
-<article class="review"><span class="q">“</span><blockquote>Awesome detail for a great price.</blockquote><div class="review-foot"><span>Verified Google Review</span><span class="stars">★★★★★</span></div></article>
-<article class="review"><span class="q">“</span><blockquote>He got my 14 year old Lexus looking almost new again, and for a very fair price.</blockquote><div class="review-foot"><span>Verified Google Review</span><span class="stars">★★★★★</span></div></article>
-</div>
-</div></section>
+<section class="standard" id="standard">
+  <div class="standard-photo"><img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1800&q=90" alt="Glossy detailed black car" loading="lazy"></div>
+  <div class="standard-copy">
+    <p class="label">The ColdShine Standard</p>
+    <h2>IF IT'S NOT<br><span>GLOSSY, WE'RE</span><br>NOT DONE.</h2>
+    <p>From daily drivers to weekend cars, every vehicle gets the same obsessive attention to detail. We come to you across the DFW area.</p>
+    <div class="standard-stats">
+      <div><strong>5.0</strong><small>Google Rating</small></div>
+      <div><strong>16+</strong><small>Reviews</small></div>
+      <div><strong>DFW</strong><small>We Come to You</small></div>
+    </div>
+    <a class="button" href="tel:+12149453694">Start Your Detail ↗</a>
+  </div>
+</section>
 
-<section class="cta"><p class="section-label">Mobile Detailing · DFW</p><h2>READY TO MAKE<br><span>YOUR CAR SHINE?</span></h2><p>Tell us what you drive. We'll take care of the rest.</p><div class="contact-row"><a class="primary" href="tel:+12149453694">Call 214-945-3694 ↗</a><a class="email" href="mailto:contact@coldshineauto.com">contact@coldshineauto.com</a></div></section>
+<section class="reviews" id="reviews">
+<div class="wrap">
+  <div class="reviews-head">
+    <div><p class="label">02 Customer Love</p><h2>DON'T TAKE<br>OUR WORD FOR IT.</h2></div>
+    <div class="score"><strong>5.0</strong><span class="stars">★★★★★</span><small>Google Rating</small></div>
+  </div>
+  <div class="review-grid">
+    <article class="review-card"><span class="review-stars">★★★★★ 5.0</span><blockquote>“Made my headlights restored like they’re brand new! Highly recommend to anyone and everyone!”</blockquote><div class="review-foot">Verified Google Review</div></article>
+    <article class="review-card"><span class="review-stars">★★★★★ 5.0</span><blockquote>“Awesome detail for a great price.”</blockquote><div class="review-foot">Verified Google Review</div></article>
+    <article class="review-card"><span class="review-stars">★★★★★ 5.0</span><blockquote>“He got my 14 year old Lexus looking almost new again, and for a very fair price.”</blockquote><div class="review-foot">Verified Google Review</div></article>
+  </div>
+</div>
+</section>
+
+<section class="cta">
+  <div class="cta-bg"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=2200&q=90" alt=""></div>
+  <div class="cta-inner">
+    <p class="label">Mobile Detailing · DFW</p>
+    <h2>READY TO MAKE<br><span>YOUR CAR SHINE?</span></h2>
+    <p>Tell us what you drive. We'll take care of the rest.</p>
+    <div class="cta-actions">
+      <a class="button" href="tel:+12149453694">Call 214-945-3694 ↗</a>
+      <a class="email" href="mailto:contact@coldshineauto.com">contact@coldshineauto.com</a>
+    </div>
+  </div>
+</section>
 </main>
-<footer class="footer"><div class="wrap"><a class="logo" href="#top"><span class="logo-mark"></span><span>COLDSHINE</span></a><span>Mobile Auto Detailing · McKinney, TX · DFW</span><a href="tel:+12149453694">214-945-3694</a><span>© <span id="year"></span> ColdShine Auto Care</span></div></footer>
+
+<footer class="footer">
+<div class="wrap">
+  <a class="wordmark" href="#top"><span class="mark"></span><span>COLDSHINE</span></a>
+  <span>Mobile Auto Detailing · McKinney, TX · DFW</span>
+  <a href="tel:+12149453694">214-945-3694</a>
+  <span>© <span id="year"></span> ColdShine Auto Care</span>
+</div>
+</footer>
 <script>
-const b=document.querySelector('.menu'),n=document.querySelector('.nav');b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'×':'☰'});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='☰'}));document.getElementById('year').textContent=new Date().getFullYear();
+const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
-</body></html>
+</body>
+</html>
