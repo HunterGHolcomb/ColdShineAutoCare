@@ -17,10 +17,10 @@ export function WorkPage() {
       />
       <section className="section dark-section work-page">
         <div className="shell">
-          <Reveal><p className="eyebow numbered"><strong>01</strong><span></span> Detail Portfolio</p><h2 className="display-heading">THE FINISH<br /><em>SPEAKS FIRST.</em></h2></Reveal>
+          <Reveal><p className="eyebrow numbered"><strong>01</strong><span></span> Detail Portfolio</p><h2 className="display-heading">THE FINISH<br /><em>SPEAKS FIRST.</em></h2></Reveal>
           <div className="work-mosaic">
-            {['hero-detailing.webp','Full exterior detail'],['interior-detailing.webp','Interior detailing'],['headlight-polishing.webp','Headlight restoration'],['mobile-detailing.webp','Mobile detailing']].map(([image,label],index) => (
-              <Reveal className={`work%tile tile-${index + 1}`} key={image}>
+            {[['hero-detailing.webp','Full exterior detail'],['interior-detailing.webp','Interior detailing'],['headlight-polishing.webp','Headlight restoration'],['mobile-detailing.webp','Mobile detailing']].map(([image,label],index) => (
+              <Reveal className={`work-tile tile-${index + 1}`} key={image}>
                 <img src={asset(image)} alt={label} />
                 <div className="work-caption"><span>0{index + 1}</span><strong>{label}</strong></div>
               </Reveal>
@@ -45,7 +45,7 @@ export function AboutPage() {
       />
       <section className="section cream-section">
         <div className="shell about-grid">
-          <Reveal><div><p className="eyebow numbered"><strong>01</strong><span></span> The Standard</p><h2 className="display-heading">NO RUSHED<br /><em>FINISHES.</em></h2></div></Reveal>
+          <Reveal><div><p className="eyebrow numbered"><strong>01</strong><span></span> The Standard</p><h2 className="display-heading">NO RUSHED<br /><em>FINISHES.</em></h2></div></Reveal>
           <Reveal><div className="prose"><p>The business is structured around mobile service and visible results. Customers can book focused maintenance work, a complete detail, or higher-level finish services depending on what the vehicle needs.</p><p>The common thread across every service is attention to the final presentation: clean lines, improved gloss and a vehicle that feels cared for.</p><Link className="text-arrow" to="/services">Explore Services ↗</Link></div></Reveal>
         </div>
       </section>
@@ -83,7 +83,7 @@ export function ContactPage() {
         <div className="shell contact-layout">
           <Reveal>
             <div className="contact-info">
-              <p className="eyebow numbered"><strong>01</strong><span></span> Contact ColdShine</p>
+              <p className="eyebrow numbered"><strong>01</strong><span></span> Contact ColdShine</p>
               <h2 className="display-heading">LET'S GET<br /><em>IT BOOKED.</em></h2>
               <div className="contact-detail-list">
                 <a href={phoneHref}><span>Phone</span><strong>{phoneDisplay}</strong></a>
