@@ -26,3 +26,5 @@ npm run build
 ```
 
 Routing uses React Router's HashRouter so deep service pages work on GitHub Pages.
+
+Deployment is handled automatically by GitHub Actions on pushes to `main`.
