@@ -31,4 +31,34 @@ export default function HomePage() {
           <Reveal>
             <p className="eyebrow"><span></span> The ColdShine Standard</p>
             <h2 className="display-heading">IF IT'S NOT<br /><em>GLOSSY,</em> WE'RE<br />NOT DONE.</h2>
-            <p>From daily drivers to weekend cars, every vehicle gets the same obsessive attention to detail. We come to you across the DFW"&VãÂ÷à¢ÆF—b6Æ74æÖSÒ&Ö–æ’×7FBÖw&–B#à¢ÆF—cãÇ7G&öæsãRãÂ÷7G&öæsãÇ6ÖÆÃävöövÆR&F–æsÂ÷6ÖÆÃãÂöF—cà¢ÆF—cãÇ7G&öæsãb³Â÷7G&öæsãÇ6ÖÆÃå&Wf–Ww3Â÷6ÖÆÃãÂöF—cà¢ÆF—cãÇ7G&öæsäDesÂ÷7G&öæsãÇ6ÖÆÃåvR6öÖRFò–÷SÂ÷6ÖÆÃãÂöF—cà¢ÂöF—cà¢ÄÆ–æ²6Æ74æÖSÒ&'WGFöâ6–B"FóÒ"ö6öçF7B#å7F'B–÷W"FWF–ÂÇ7ãî(isÂ÷7ããÂôÆ–æ³à¢Âõ&WfVÃà¢ÂöF—cà¢Â÷6V7F–öãà ¢Ç6V7F–öâ6Æ74æÖSÒ'6V7F–öâF&²×6V7F–öâ†öÖR×&Wf–Ww2#à¢ÆF—b6Æ74æÖSÒ'6†VÆÂ#à¢Å&WfVÃà¢ÆF—b6Æ74æÖSÒ'&Wf–Ww2Ö†VF–ær×&÷r#à¢ÆF—cà¢Ç6Æ74æÖSÒ&W–V'&÷rçVÖ&W&VB#ãÇ7G&öæsã#Â÷7G&öæsãÇ7ããÂ÷7ãâ7W7FöÖW"Æ÷fSÂ÷à¢Æƒ"6Æ74æÖSÒ&F—7Æ’Ö†VF–ær#äDôâuBD´SÆ'"óãÆVÓäõU"tõ$Bdõ"•BãÂöVÓãÂöƒ#à¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ'6–FR×&F–ær#ãÇ7â6Æ74æÖSÒ&6–B×7F'2#î)ˆ^)ˆ^)ˆ^)ˆ^)˜SÂ÷7ããÇ6ÖÆÃãRãvöövÆR&F–æsÂ÷6ÖÆÃãÂöF—cà¢ÂöF—cà¢Âõ&WfVÃà¢Å&WfVÃãÅ&Wf–Wt6&G26öæFVç6VBóãÂõ&WfVÃà¢ÆF—b6Æ74æÖSÒ'6V7F–öâÖÆ–æ²×&÷r#ãÄÆ–æ²FóÒ"÷&Wf–Ww2#å&VBÆÂ&Wf–Ww2Ç7ãî(isÂ÷7ããÂôÆ–æ³ãÂöF—cà¢ÂöF—cà¢Â÷6V7F–öãà ¢Ä&–t7Fóà¢Âóà¢§Ğ
+            <p>From daily drivers to weekend cars, every vehicle gets the same obsessive attention to detail. We come to you across the DFW area.</p>
+            <div className="mini-stat-grid">
+              <div><strong>5.0</strong><small>Google Rating</small></div>
+              <div><strong>16+</strong><small>Reviews</small></div>
+              <div><strong>DFW</strong><small>We Come To You</small></div>
+            </div>
+            <Link className="button acid" to="/contact">Start Your Detail <span>â†—</span></Link>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="section dark-section home-reviews">
+        <div className="shell">
+          <Reveal>
+            <div className="reviews-heading-row">
+              <div>
+                <p className="eyebrow numbered"><strong>02</strong><span></span> Customer Love</p>
+                <h2 className="display-heading">DON'T TAKE<br /><em>OUR WORD FOR IT.</em></h2>
+              </div>
+              <div className="side-rating"><span className="acid-stars">â˜…â˜…â˜…â˜…â˜…</span><small>5.0 Google Rating</small></div>
+            </div>
+          </Reveal>
+          <Reveal><ReviewCards condensed /></Reveal>
+          <div className="section-link-row"><Link to="/reviews">Read All Reviews <span>â†—</span></Link></div>
+        </div>
+      </section>
+
+      <BigCta />
+    </>
+  )
+}
