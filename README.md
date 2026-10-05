@@ -1,7 +1,28 @@
-# ColdShineAutoCare
+# ColdShine Auto Care
 
-Rebuilt ColdShine Auto Care marketing site.
+Full multi-page React/Vite marketing website for ColdShine Auto Care.
 
-Live site target: https://huntergholcomb.github.io/ColdShineAutoCare/
+## Pages
 
-The site is a static HTML build and deploys from `main` through GitHub Pages.
+- Home
+- Services overview
+- Dedicated individual service pages
+- Reviews
+- Our Work
+- About
+- Contact / Quote
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+```
+
+Routing uses React Router's HashRouter so deep service pages work on GitHub Pages.
