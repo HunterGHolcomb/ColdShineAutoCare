@@ -35,8 +35,8 @@ jobs:
       - name: Build Vite site
         run: npm run build
 
-      - name: Add SPA fallback for GitHub Pages
-        run: cp dist/index.html dist/404.html
+      - name: Generate route entry points
+        run: node scripts/create-static-routes.mjs
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
